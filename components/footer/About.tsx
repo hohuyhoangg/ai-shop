@@ -16,7 +16,7 @@ export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
 				<p className='title'>{title}</p>
 			</div>
 			<div className='page-footer__disclaimer'>
-					This website and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
+					LP This website and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
 					Price and availability information is subject to change without notice.
 			</div>
 		</>
