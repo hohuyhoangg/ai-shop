@@ -38,7 +38,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		// @ts-ignore
 		document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
 			// @ts-ignore
-			window.startTrafficAgent('KA-5241-1');
+			window.startTrafficAgent('KA-5612-2');
 		});
 	}, []);
 
