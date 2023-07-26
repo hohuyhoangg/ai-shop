@@ -21,8 +21,21 @@ import '@fortawesome/fontawesome-free/css/svg-with-js.css';
 import {AppProps} from 'next/app';
 import RouterListener from '../components/RouterListener';
 import LoadingLine from '../components/LoadingLine';
-
+import {useEffect} from "react";
 function MyApp({Component, pageProps}: AppProps) {
+	useEffect(() => {
+		const katalonTrafficAgent = document.createElement('script');
+		katalonTrafficAgent.async = true;
+		katalonTrafficAgent.defer = true;
+		katalonTrafficAgent.src = 'https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
+		katalonTrafficAgent.id = 'katalonTrafficAgent';
+
+		document.head.appendChild(katalonTrafficAgent);
+
+		document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
+			window.startTrafficAgent('KA-596-3');
+		});
+	}, []);
 	return (
 		<Provider store={store}>
 			<RouterListener />
