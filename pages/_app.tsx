@@ -1,3 +1,7 @@
+/* eslint-disable */
+// @ts-ignore
+import {useEffect} from 'react';
+// @ts-ignore
 import {Provider} from 'react-redux';
 import {store} from '../redux/store';
 import 'nprogress/nprogress.css';
@@ -18,10 +22,11 @@ import 'boundless-checkout-react/dist/index.css';
 
 import '@fortawesome/fontawesome-free/css/svg-with-js.css';
 
+// @ts-ignore
 import {AppProps} from 'next/app';
 import RouterListener from '../components/RouterListener';
 import LoadingLine from '../components/LoadingLine';
-import {useEffect} from "react";
+
 function MyApp({Component, pageProps}: AppProps) {
 	useEffect(() => {
 		const katalonTrafficAgent = document.createElement('script');
