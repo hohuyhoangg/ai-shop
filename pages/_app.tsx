@@ -40,7 +40,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		// @ts-ignore
 		document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
 			// @ts-ignore
-			window.startTrafficAgent('KA-596-3');
+			window.startTrafficAgent('KA-299628-2');
 		});
 	}, []);
 	return (
