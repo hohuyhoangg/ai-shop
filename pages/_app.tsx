@@ -26,6 +26,7 @@ import {useEffect} from "react";
 
 function MyApp({Component, pageProps}: AppProps) {
 
+	
 	useEffect(() => {
 		const katalonTrafficAgent = document.createElement('script');
 		katalonTrafficAgent.async = true;
