@@ -34,6 +34,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		katalonTrafficAgent.src = 'https://static.staging.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
 		katalonTrafficAgent.id = 'katalonTrafficAgent';
 
+		
 		document.head.appendChild(katalonTrafficAgent);
 
 		// @ts-ignore
