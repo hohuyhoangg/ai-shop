@@ -31,7 +31,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		const katalonTrafficAgent = document.createElement('script');
 		katalonTrafficAgent.async = true;
 		katalonTrafficAgent.defer = true;
-		katalonTrafficAgent.src = 'https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
+		katalonTrafficAgent.src = 'https://static.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
 		katalonTrafficAgent.id = 'katalonTrafficAgent';
 
 		
@@ -40,7 +40,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		// @ts-ignore
 		document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
 			// @ts-ignore
-			window.startTrafficAgent('KA-7584-1');
+			window.startTrafficAgent('KA-743630-46');
 		});
 	}, []);
 
