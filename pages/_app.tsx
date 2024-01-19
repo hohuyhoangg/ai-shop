@@ -28,21 +28,21 @@ import RouterListener from '../components/RouterListener';
 import LoadingLine from '../components/LoadingLine';
 
 function MyApp({Component, pageProps}: AppProps) {
-	// useEffect(() => {
-	// 	const katalonTrafficAgent = document.createElement('script');
-	// 	katalonTrafficAgent.async = true;
-	// 	katalonTrafficAgent.defer = true;
-	// 	katalonTrafficAgent.src = 'https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
-	// 	katalonTrafficAgent.id = 'katalonTrafficAgent';
+	useEffect(() => {
+		const katalonTrafficAgent = document.createElement('script');
+		katalonTrafficAgent.async = true;
+		katalonTrafficAgent.defer = true;
+		katalonTrafficAgent.src = 'https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
+		katalonTrafficAgent.id = 'katalonTrafficAgent';
 
-	// 	document.head.appendChild(katalonTrafficAgent);
+		document.head.appendChild(katalonTrafficAgent);
 
-	// 	// @ts-ignore
-	// 	document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
-	// 		// @ts-ignore
-	// 		window.startTrafficAgent('KA-12-17');
-	// 	});
-	// }, []);
+		// @ts-ignore
+		document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
+			// @ts-ignore
+			window.startTrafficAgent('KA-10511-2');
+		});
+	}, []);
 	return (
 		<Provider store={store}>
 			<RouterListener />
