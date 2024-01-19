@@ -28,6 +28,7 @@ import RouterListener from '../components/RouterListener';
 import LoadingLine from '../components/LoadingLine';
 
 function MyApp({Component, pageProps}: AppProps) {
+	
 	useEffect(() => {
 		const katalonTrafficAgent = document.createElement('script');
 		katalonTrafficAgent.async = true;
@@ -35,6 +36,7 @@ function MyApp({Component, pageProps}: AppProps) {
 		katalonTrafficAgent.src = 'https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js';
 		katalonTrafficAgent.id = 'katalonTrafficAgent';
 
+		
 		document.head.appendChild(katalonTrafficAgent);
 
 		// @ts-ignore
